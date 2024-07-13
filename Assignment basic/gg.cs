@@ -10,6 +10,14 @@
 // Console.WriteLine("Your number is: " + myNum);
 
 
- int myAge = 25;
-      int votingAge = 18;
-      Console.WriteLine(myAge >= votingAge); 
+//  int myAge = 25;
+//       int votingAge = 18;
+//       Console.WriteLine(myAge >= votingAge); 
+
+
+
+      string[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+for (int i = 0; i < cars.Length; i++) 
+{
+  Console.WriteLine(cars[i]);
+}
