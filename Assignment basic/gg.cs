@@ -5,6 +5,11 @@
 // name = string.empty;
     
 
- Console.WriteLine("Think of a number:");
-int myNum = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Your number is: " + myNum);
+//  Console.WriteLine("Think of a number:");
+// int myNum = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Your number is: " + myNum);
+
+
+ int myAge = 25;
+      int votingAge = 18;
+      Console.WriteLine(myAge >= votingAge); 
