@@ -1,4 +1,4 @@
-# Learning C#
+<!-- # Learning C#
 
 - [Tutorial](#tutorial)
 - [Methods](#methods-1)
@@ -693,4 +693,4 @@ interface Animal
 md doc for escape characters
 
 #####ctor for default constructor in vs
-prop tab for the property
+prop tab for the property -->
