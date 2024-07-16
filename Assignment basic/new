@@ -1,2 +1,2 @@
-string Name = "bazeela";
-Cosnole.WriteLine(Name);
+// string Name = "bazeela";
+// Cosnole.WriteLine(Name);

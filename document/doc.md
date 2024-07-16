@@ -79,12 +79,12 @@ Console.WriteLine(Convert.ToString(myBool));   // convert bool to string
 ```C#
 string userName = Console.ReadLine();
 ```
-####Types iN C#
+#### Types iN C#
 2 categories
 ----Value Types
 ----Reference Types
 
-1. Value types include: int, float, double, structs, enums etc>> arent nullabe.. to make it nullable--put "?" with thw data type
+1. Value types include: int, float, double, structs, enums etc>> arent nullabe.. to make it nullable--put "?" with the data type
   int? i = null;
 2. Reference types include: Interface, Class, delegates, arrays,strings etc >>>are nullable
 
@@ -102,6 +102,18 @@ bool IsNumber10 = Number == 10 ? true : false;
 Console.WriteLine("Number == 10 is {0}", IsNumber10);
 
 
+### 7.2 null-coalescing operator ??
+
+The null-coalescing operator ?? returns the value of its left-hand operand if it isn't null; otherwise, it evaluates the right-hand operand and returns its result. The ?? operator doesn't evaluate its right-hand operand if the left-hand operand evaluates to non-null. The null-coalescing assignment operator ??= assigns the value of its right-hand operand to its left-hand operand only if the left-hand operand evaluates to null. The ??= operator doesn't evaluate its right-hand operand if the left-hand operand evaluates to non-null.
+
+{
+  int? TicketOnSale = 10;
+int AvailableTickets = TicketOnSale ?? 0; 
+Console.WriteLine("AvailableTickets = {0}", AvailableTickets);
+}
+
+
+
 ### 8. Math
 
 - Math.Max(x,y)
@@ -110,7 +122,7 @@ Console.WriteLine("Number == 10 is {0}", IsNumber10);
 - Math.Abs(x)
 - Math.Round()
 
-####Valid types are int and long
+#### Valid types are int and long
 float and double.
 The precision of a floating point value indicates how many digits the value can have after the decimal point. The precision of float is only six or seven decimal digits, while double variables have a precision of about 15 digits.Therefore it is safer to use double for most calculations.
 The char data type is used to store a single character.The character must be surrounded by single quotes, like 'A' or 'c':
@@ -142,7 +154,7 @@ string name = string.Concat(firstName, lastName);
 ```C#
 string firstName = "John";
 string lastName = "Doe";
-string name = $"My full name is: {firstName} {lastName}";
+string name = $"My full name is: {firstName} {lastName}";>> >Console.WriteLine($"      : {}");
 ```
 
 #### Access Strings
