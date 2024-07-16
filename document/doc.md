@@ -64,15 +64,32 @@ myNum = 20; // error
 - Implicit Casting (automatically) - converting a smaller type to a larger type size
 char -> int -> long -> float -> double
 
-- Explicit Casting (manually) - converting a larger type to a smaller size type
-double -> float -> long -> int -> char
 
+- Explicit Casting (manually) - converting a larger type to a smaller size type
+double -> float -> long -> int -> char::::::::can do this using typecast operator or convert class
+
+-----typecast operator
+```C#
+f = 1083.37843;
+int i = (int)f;
+
+----------convert class(preferrable)
 ```C#
 Console.WriteLine(Convert.ToString(myInt));    // convert int to string
 Console.WriteLine(Convert.ToDouble(myInt));    // convert int to double
 Console.WriteLine(Convert.ToInt32(myDouble));  // convert double to int
 Console.WriteLine(Convert.ToString(myBool));   // convert bool to string
 ```
+
+
+----string to int (used to convert no., age etc)
+```C# 
+string strNumber ="100" ;
+int Result = 0;
+int.TryParse(strNumber, out Result );
+ Console.WriteLine(i);
+
+
 
 ### 6. User Input
 
@@ -97,6 +114,7 @@ string userName = Console.ReadLine();
 
 ### 7.1 Ternary Operators ?:
 
+```C#
 int Number = 10;
 bool IsNumber10 = Number == 10 ? true : false;
 Console.WriteLine("Number == 10 is {0}", IsNumber10);
@@ -106,6 +124,7 @@ Console.WriteLine("Number == 10 is {0}", IsNumber10);
 
 The null-coalescing operator ?? returns the value of its left-hand operand if it isn't null; otherwise, it evaluates the right-hand operand and returns its result. The ?? operator doesn't evaluate its right-hand operand if the left-hand operand evaluates to non-null. The null-coalescing assignment operator ??= assigns the value of its right-hand operand to its left-hand operand only if the left-hand operand evaluates to null. The ??= operator doesn't evaluate its right-hand operand if the left-hand operand evaluates to non-null.
 
+```C#
 {
   int? TicketOnSale = 10;
 int AvailableTickets = TicketOnSale ?? 0; 
@@ -126,6 +145,8 @@ Console.WriteLine("AvailableTickets = {0}", AvailableTickets);
 float and double.
 The precision of a floating point value indicates how many digits the value can have after the decimal point. The precision of float is only six or seven decimal digits, while double variables have a precision of about 15 digits.Therefore it is safer to use double for most calculations.
 The char data type is used to store a single character.The character must be surrounded by single quotes, like 'A' or 'c':
+
+
 
 ### 9. Strings
 
@@ -268,6 +289,35 @@ foreach (string i in cars)
 int[,] numbers = { {1, 4, 2}, {3, 6, 8} };
 Console.WriteLine(numbers[0, 2]);  // Outputs 2
 ```
+
+Array.Sort(cars);
+cars.Length;
+#### Loops through an array:
+
+for loop:
+```C#
+string[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+for (int i = 0; i < cars.Length; i++) 
+{
+  Console.WriteLine(cars[i]);
+}
+
+for eachloop:
+
+```C#
+string[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+foreach (string i in cars) 
+{
+  Console.WriteLine(i);
+}
+
+#####
+Arrays are used to store multiple values in a single variable,
+-----------------------------------------------
+To change the value of a specific element, refer to the index number
+string[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+cars[0] = "Opel";
+Console.WriteLine(cars[0]);
 
 ## Methods
 
