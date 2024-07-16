@@ -79,6 +79,14 @@ Console.WriteLine(Convert.ToString(myBool));   // convert bool to string
 ```C#
 string userName = Console.ReadLine();
 ```
+####Types iN C#
+2 categories
+----Value Types
+----Reference Types
+
+1. Value types include: int, float, double, structs, enums etc>> arent nullabe.. to make it nullable--put "?" with thw data type
+  int? i = null;
+2. Reference types include: Interface, Class, delegates, arrays,strings etc >>>are nullable
 
 ### 7. Operators
 
@@ -87,6 +95,13 @@ string userName = Console.ReadLine();
 - Comparison: ==, !=, >, <, >=, <=
 - Logical: &&, ||, !
 
+### 7.1 Ternary Operators ?:
+
+int Number = 10;
+bool IsNumber10 = Number == 10 ? true : false;
+Console.WriteLine("Number == 10 is {0}", IsNumber10);
+
+
 ### 8. Math
 
 - Math.Max(x,y)
@@ -94,6 +109,11 @@ string userName = Console.ReadLine();
 - Math.Sqrt(x)
 - Math.Abs(x)
 - Math.Round()
+
+####Valid types are int and long
+float and double.
+The precision of a floating point value indicates how many digits the value can have after the decimal point. The precision of float is only six or seven decimal digits, while double variables have a precision of about 15 digits.Therefore it is safer to use double for most calculations.
+The char data type is used to store a single character.The character must be surrounded by single quotes, like 'A' or 'c':
 
 ### 9. Strings
 
@@ -607,5 +627,8 @@ interface Animal
 
 [Home](#learning-c)
 
-Escape characters:
+#####Escape characters:EX \ for invertes commas
 md doc for escape characters
+
+#####ctor for default constructor in vs
+prop tab for the property
