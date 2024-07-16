@@ -1,0 +1,2 @@
+string Name = "bazeela";
+Cosnole.WriteLine("HELLO" + Name);
