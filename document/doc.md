@@ -234,7 +234,7 @@ switch(expression)
     break;
 }
 
-The default keyword is optional and specifies some code to run if there is no case match:
+The default keyword is optional and specifies some code to run if there is no case match::
 
 int day = 4;
 switch (day) 
