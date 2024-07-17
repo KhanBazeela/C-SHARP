@@ -1,4 +1,4 @@
-<!-- # Learning C#
+# Learning C#
 
 - [Tutorial](#tutorial)
 - [Methods](#methods-1)
@@ -219,6 +219,7 @@ string result = (time < 18) ? "Good day." : "Good evening.";
 
 ### Switch
 
+Multiple if else statements can be replaced by switch statement.
 ```C#
 switch(expression) 
 {
@@ -230,6 +231,22 @@ switch(expression)
     break;
   default:
     // code block
+    break;
+}
+
+The default keyword is optional and specifies some code to run if there is no case match:
+
+int day = 4;
+switch (day) 
+{
+  case 6:
+    Console.WriteLine("Today is Saturday.");
+    break;
+  case 7:
+    Console.WriteLine("Today is Sunday.");
+    break;
+  default:
+    Console.WriteLine("Looking forward to the Weekend.");
     break;
 }
 ```
@@ -693,4 +710,4 @@ interface Animal
 md doc for escape characters
 
 #####ctor for default constructor in vs
-prop tab for the property -->
+prop tab for the property
